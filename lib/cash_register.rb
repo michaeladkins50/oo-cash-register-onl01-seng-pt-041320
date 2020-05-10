@@ -30,6 +30,7 @@ class CashRegister
   end
   def void_last_transaction
     voided = @quantity[-1]
+    puts voided
     last_trsnsaction = @price[-1]
     while voided > 0
       @total = @total - last_trsnsaction
