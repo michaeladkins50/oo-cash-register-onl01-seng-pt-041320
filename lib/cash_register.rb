@@ -34,6 +34,7 @@ class CashRegister
     last_trsnsaction = @price[-1]
     while voided > 0
       @total = @total - last_trsnsaction
+      puts total
       voided -= 1
     end
     @price.slice!(-1)
